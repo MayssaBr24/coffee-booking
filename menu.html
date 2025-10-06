@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Coffee-Lounge - Gabès</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Updated header with modern sticky navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-6mgKStkinESACHRYw93KTfwhjHVViz.jpg" alt="Sunset Coffee-Lounge" class="logo-img">
+                </div>
+                <nav class="nav" id="nav">
+                    <a href="#accueil" class="nav-link">ACCUEIL</a>
+                    <a href="#menu" class="nav-link">MENU</a>
+                    <a href="#galerie" class="nav-link">GALERIE</a>
+                    <a href="#apropos" class="nav-link">À PROPOS</a>
+                    <a href="#contact" class="nav-link">CONTACT</a>
+                </nav>
+                <!-- Bouton réservation activé avec modal -->
+                <button class="cta-button" id="reservationBtn">RÉSERVER</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Modern hero section with overlay -->
+    <section class="hero" id="accueil">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">DÉCOUVREZ</p>
+            <h1 class="hero-title">Sunset Coffee-Lounge</h1>
+            <p class="hero-description">L'excellence du café à Gabès</p>
+            <a href="#menu" class="hero-cta">VOIR LE MENU</a>
+        </div>
+    </section>
+
+    <!-- Menu section with modern card layout -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">DÉCOUVREZ</p>
+                <h2 class="section-title">Notre Menu</h2>
+                <p class="hero-description">Des saveurs exceptionnelles pour chaque moment</p>
+                
+                <!-- Ajout du filtre de recherche pour le menu -->
+                <div class="menu-search">
+                    <input 
+                        type="text" 
+                        id="menuSearch" 
+                        class="search-input" 
+                        placeholder=" Rechercher dans le menu..."
+                    >
+                </div>
+            </div>
+
+           <!-- Petit Déjeuner Section -->
+<div class="menu-category-section">
+    <div class="section-header">
+        <h2 class="section-title">PETIT DÉJEUNER • Breakfast</h2>
+    </div>
+    <div class="menu-grid" id="breakfast-grid">
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://cdn.futura-sciences.com/buildsv6/images/square1280/0/7/6/076c3fe209_117550_petit-dej-ideal.jpg" alt="Express" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Express</h3>
+            <p class="menu-item-description">Café au choix, jus, viennoiserie (cake ou croissant), beurre, confiture, toast et eau 0,5 L</p>
+            <div class="menu-item-price">9.5 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://dietcie.com/wp-content/uploads/2021/01/petit-dejeuner-complet.jpg" alt="Gourmand" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Gourmand</h3>
+            <p class="menu-item-description">Café au choix, jus, viennoiserie, beurre, confiture, Nutella, miel, toast, omelette et eau 0,5 L</p>
+            <div class="menu-item-price">16 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREcli7zWP3GaoL5SI8YDOu5aH7E6-G_SoW8A&s" alt="Traditionnel" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Traditionnel</h3>
+            <p class="menu-item-description">Café au choix, jus, hrissa hloua, huile d'olive, bsissa, miel, mlawi, hrissa arbi, ojja, olives, homs keskes, dattes, chamia et eau 0,5 L</p>
+            <div class="menu-item-price">19 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Original" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Original</h3>
+            <p class="menu-item-description">Café au choix, jus, viennoiserie, beurre, confiture, Nutella, miel, ricotta, chamia, omelette au fromage, charcuterie, tomates cerises, toast salé, lasagne, mini crêpe au chocolat, brownies, salade de fruits, yaourt, toast et eau 0,5 L</p>
+            <div class="menu-item-price">28 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Royal" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Royal (Pour 2 personnes)</h3>
+            <p class="menu-item-description">Café au choix, jus, viennoiserie, beurre, confiture, Nutella, ricotta, omelette, charcuterie, saucisse, calamar doré, brochette de poulet, sauce tartare, fromage, olives, salade César, hrissa, mayonnaise, mini pancake, salade de fruits, yaourt, toast et eau 0,5 L</p>
+            <div class="menu-item-price">44.5 DT</div>
+        </div>
+    </div>
+</div>
+
+<!-- Cafés Section -->
+<div class="menu-category-section">
+    <div class="section-header">
+        <h2 class="section-title">CAFÉS • Coffee Selection</h2>
+    </div>
+    <div class="menu-grid" id="coffee-grid">
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Express" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Express</h3>
+            <p class="menu-item-description">Lavazza ou Nespresso</p>
+            <div class="menu-item-price">6 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Américain" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Américain</h3>
+            <p class="menu-item-description">Lavazza ou Nespresso</p>
+            <div class="menu-item-price">6.3 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://cdn.prod.website-files.com/64c110cfbf2b6e070209a13b/650c511afe8468f1a986c6a9_image%201%20Cappuccino%20French%20Coffee%20Shop.webp" alt="Capucin" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Capucin</h3>
+            <p class="menu-item-description">Lavazza ou Nespresso</p>
+            <div class="menu-item-price">6.5 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1579888071069-c107a6f79d82?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Café Crème" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Café Crème</h3>
+            <p class="menu-item-description">Lavazza ou Nespresso</p>
+            <div class="menu-item-price">6.8 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1561047029-3000c68339ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Café Aromatisé" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Cafés Aromatisés</h3>
+            <p class="menu-item-description">Caramel, Vanille, Noisette, Chocolat, Spéculoos, Pop Corn, Praline, Cookies</p>
+            <div class="menu-item-price">7.2 - 7.6 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Frappuccino" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Frappuccinos</h3>
+            <p class="menu-item-description">Coffee, Nutella, Oreo, Noisette, Caramel, Caramel Banane Vanille</p>
+            <div class="menu-item-price">10.5 - 15.5 DT</div>
+        </div>
+    </div>
+</div>
+
+<!-- Boissons Froides Section -->
+<div class="menu-category-section">
+    <div class="section-header">
+        <h2 class="section-title">BOISSONS • Cold Drinks</h2>
+    </div>
+    <div class="menu-grid" id="drinks-grid">
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Milk-shake" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Milk-shakes</h3>
+            <p class="menu-item-description">Strawberry, Oreo, Spéculoos, Nutella, Snickers, Ferrero Rocher, Caramel Banane, Délice</p>
+            <div class="menu-item-price">13.5 - 16.5 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Jus Frais" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Jus Frais</h3>
+            <p class="menu-item-description">Citronnade, Fraise, Orange, Pêche, Lait de Poule, Kiwi, Ananas</p>
+            <div class="menu-item-price">6.5 - 9.8 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1519996409144-56c88c9aa612?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Smoothies" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Smoothies</h3>
+            <p class="menu-item-description">Hawai, Havana, Sunrise, Fruity Delight, Retro, Tropical, Piña Colada, Rainbow</p>
+            <div class="menu-item-price">14.8 - 16.5 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mojitos" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Mojitos</h3>
+            <p class="menu-item-description">Classique, Blue, Pastèque, Framboise, Kiwi, Sunrise, Pêche, Énergétique</p>
+            <div class="menu-item-price">10.5 - 17.5 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cocktails" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Cocktails Jus Frais</h3>
+            <p class="menu-item-description">Banana Moon, Amaretto, Passionata, Banana Colada, Fraîcheur, Banane Datte</p>
+            <div class="menu-item-price">11.5 - 16.5 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Chocolat" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Plaisirs de Chocolat</h3>
+            <p class="menu-item-description">Classique, À la Crème, Aromatisé, Fruits de Saison, Sunset</p>
+            <div class="menu-item-price">8.5 - 11.8 DT</div>
+        </div>
+    </div>
+</div>
+
+<!-- Desserts Section -->
+<div class="menu-category-section">
+    <div class="section-header">
+        <h2 class="section-title">DESSERTS • Délices</h2>
+    </div>
+    <div class="menu-grid" id="desserts-grid">
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fondant Chocolat" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Fondant Chocolat</h3>
+            <p class="menu-item-description">Délicieux fondant au chocolat</p>
+            <div class="menu-item-price">11 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tiramisu" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Tiramisu</h3>
+            <p class="menu-item-description">Tiramisu traditionnel</p>
+            <div class="menu-item-price">12.5 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fondant Pistache" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Fondant Pistache</h3>
+            <p class="menu-item-description">Fondant à la pistache</p>
+            <div class="menu-item-price">12.5 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1524351199678-941a58a3df50?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cheesecake" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Cheesecake</h3>
+            <p class="menu-item-description">Cheesecake crémeux</p>
+            <div class="menu-item-price">12.5 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://somebodyfeedseb.com/wp-content/uploads/2023/05/square-2023.04.23-San-Sebastian-Cheesecake-5444.jpg" alt="Cheesecake San Sebastian" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Cheesecake San Sebastian</h3>
+            <p class="menu-item-description">Cheesecake basque brûlé</p>
+            <div class="menu-item-price">12.5 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://kitchen335co.com/wp-content/uploads/2023/08/san-sebastian-cheesecake-thumbnail.jpg" alt="Cheesecake Fruits Secs" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Cheesecake San Sebastian Fruits Secs</h3>
+            <p class="menu-item-description">Avec fruits secs</p>
+            <div class="menu-item-price">14.5 DT</div>
+        </div>
+    </div>
+</div>
+
+<!-- Glaces & Crêpes Section -->
+<div class="menu-category-section">
+    <div class="section-header">
+        <h2 class="section-title">GLACES & CRÊPES • Ice Cream & Crepes</h2>
+    </div>
+    <div class="menu-grid" id="icecream-grid">
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gélateries" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Gélateries</h3>
+            <p class="menu-item-description">2 boules, 3 boules, Sorbet Citron, Oreo, Snickers, Ferrero, Banane Split</p>
+            <div class="menu-item-price">8.4 - 16 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://assets.afcdn.com/recipe/20250128/157770_w1024h576c1cx1130cy1023cxt0cyt0cxb2667cyb1500.webp" alt="Crêpes Sucrées" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Crêpes Sucrées</h3>
+            <p class="menu-item-description">Chocolat, Nutella, 3 Sauces, Nutella Oreo, Ferrero, Spéculoos, Crêpe Dubai, Sunset</p>
+            <div class="menu-item-price">8.5 - 19.5 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pancake" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Pancake</h3>
+            <p class="menu-item-description">Nutella, Nutella Oreo, Ferrero Rocher, Spéculoos, Nutella Pistache, Sunset</p>
+            <div class="menu-item-price">12.5 - 21 DT</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image-wrapper">
+                <div class="menu-item-image-border"></div>
+                <img src="https://assets.afcdn.com/recipe/20221021/136526_w1024h768c1cx3360cy2540cxt1670cyt1060cxb5390cyb4210.webp" alt="Gaufres" class="menu-item-image">
+            </div>
+            <h3 class="menu-item-name">Gaufres</h3>
+            <p class="menu-item-description">Nutella, Nutella Oreo, 3 Sauces, Ferrero Rocher, Spéculoos, Nutella Pistache, Sunset</p>
+            <div class="menu-item-price">12.5 - 21 DT</div>
+        </div>
+    </div>
+</div>
+
+    <!-- Nouvelle section galerie ajoutée -->
+    <section class="gallery-section" id="galerie">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">DÉCOUVREZ</p>
+                <h2 class="section-title">Notre Galerie</h2>
+                <p class="hero-description">Plongez dans l'ambiance de Sunset Coffee-Lounge</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="WhatsApp Image 2025-10-01 at 4.29.35 PM (1).jpeg" alt="Intérieur du café">
+                </div>
+                <div class="gallery-item">
+                    <img src="WhatsApp Image 2025-10-01 at 4.29.35 PM (2).jpeg" alt="Préparation de café">
+                </div>
+                <div class="gallery-item">
+                    <img src="WhatsApp Image 2025-10-01 at 4.29.35 PM (3).jpeg" alt="Petit déjeuner">
+                </div>
+                <div class="gallery-item">
+                    <img src="WhatsApp Image 2025-10-01 at 4.29.36 PM (3).jpeg" alt="Boissons fraîches">
+                </div>
+                <div class="gallery-item">
+                    <img src="WhatsApp Image 2025-10-01 at 4.29.36 PM (4).jpeg" alt="Desserts">
+                </div>
+                <div class="gallery-item">
+                    <img src="WhatsApp Image 2025-10-01 at 4.29.36 PM (5).jpeg" alt="Espace détente">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section with modern layout -->
+    <section class="about-section" id="apropos">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">NOTRE HISTOIRE</p>
+                <h2 class="section-title">À Propos de Nous</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Bienvenue au <strong>Sunset Coffee Lounge</strong>, votre destination café à Gabès. Nous sommes passionnés par l'art du café et nous nous engageons à vous offrir une expérience exceptionnelle.</p>
+                    <p>Notre menu varié propose des petits déjeuners copieux, des cafés artisanaux Lavazza et Nespresso, des boissons rafraîchissantes et des desserts délicieux. Chaque création est préparée avec soin et les meilleurs ingrédients.</p>
+                    <p>Que vous veniez pour un café rapide, un brunch entre amis ou un moment de détente, notre équipe vous accueille dans une ambiance chaleureuse et conviviale.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-6mgKStkinESACHRYw93KTfwhjHVViz.jpg" alt="Sunset Coffee Lounge">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section contact améliorée avec adresse précise, bouton carte et réseaux sociaux -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">CONTACTEZ-NOUS</p>
+                <h2 class="section-title">Visitez-Nous</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Adresse</h3>
+                        <p>Avenue Habib Bourguiba<br>Gabès 6000, Tunisie</p>
+                        <button class="map-btn" id="mapBtn">
+                            <i class="fas fa-map"></i> Voir sur la carte
+                        </button>
+                    </div>
+                    <div class="info-card">
+                        <h3><i class="fas fa-phone"></i> Téléphone</h3>
+                        <p>+216 25 925 103</p>
+                    </div>
+                    <div class="info-card">
+                        <h3><i class="fas fa-clock"></i> Horaires</h3>
+                        <p>Tous les jours<br>8h00 - 23h00</p>
+                    </div>
+                    <div class="info-card social-card">
+                        <h3><i class="fas fa-share-alt"></i> Suivez-nous</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/SunsetCoffeeLounge" target="_blank" class="social-link facebook" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/sunset_coffeelounge/" target="_blank" class="social-link instagram" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                           
+                            <a href="https://wa.me/21625925103" target="_blank" class="social-link whatsapp" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Votre nom" required>
+                        <input type="email" placeholder="Votre email" required>
+                        <input type="tel" placeholder="Votre téléphone">
+                        <textarea placeholder="Votre message" rows="5" required></textarea>
+                        <button type="submit" class="submit-btn">Envoyer le Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de réservation ajouté -->
+    <div class="modal" id="reservationModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Réserver une Table</h2>
+            <form class="reservation-form" id="reservationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="resName">Nom complet *</label>
+                        <input type="text" id="resName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="resPhone">Téléphone *</label>
+                        <input type="tel" id="resPhone" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="resDate">Date *</label>
+                        <input type="date" id="resDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="resTime">Heure *</label>
+                        <input type="time" id="resTime" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="resGuests">Nombre de personnes *</label>
+                        <select id="resGuests" required>
+                            <option value="">Sélectionner...</option>
+                            <option value="1">1 personne</option>
+                            <option value="2">2 personnes</option>
+                            <option value="3">3 personnes</option>
+                            <option value="4">4 personnes</option>
+                            <option value="5">5 personnes</option>
+                            <option value="6">6 personnes</option>
+                            <option value="7+">7+ personnes</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="resEmail">Email</label>
+                        <input type="email" id="resEmail">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="resNotes">Notes spéciales</label>
+                    <textarea id="resNotes" rows="3" placeholder="Allergies, préférences de table, occasion spéciale..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Confirmer la Réservation</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modern footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-6mgKStkinESACHRYw93KTfwhjHVViz.jpg" alt="Sunset Coffee-Lounge" class="footer-logo">
+                <p>&copy; 2025 Sunset Coffee-Lounge. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
